@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise 2 Operators</title>
+
+</head>
+<body>
+	
+	<!-- BOOTSTRAP -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+	<div class="conatiner">
+	<h1>Area and Circumference of a Circle</h1>
+	</div>
+
+	<img src="https://i.pinimg.com/736x/3f/ec/ca/3feccaf23eb69560579e0e0a4cc0f2aa.jpg" width="300" height="300">
+
+	<h3 id="answer">Click the buttons below to find out the area and circumference of the circle.</h3>
+
+	<!-- Area=pi*(rad*2) -->
+	<button type="button" class="btn btn-warning" onclick="
+	const pi=3.14;
+	var rad=5;
+	var area = pi*(rad*rad);
+	
+	document.getElementById('answer'). innerHTML = 'The area of the circle is ' + area + '.' ">AREA</button>
+	
+	<button type="button" class="btn btn-info" onclick="
+	const pi=3.14;
+	var rad=5;
+	var area= pi*(rad*rad);
+
+	document.getElementById('answer'). innerHTML = 'The area of the circle is ' + area + '.'
+	">CIRCUMFERENCE</button>
+
+
+	
+	<button type="button" onClick="window.location.reload()">REFRESH</button>
+</body>
+</html>
